@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: BerthaMelanie;
+    src: url("../font/BerthaMelanie.ttf");
+}
+.maj{
+    text-transform: uppercase;
+}
+.italique{
+    font-style: italic;
+}
+.fontface{
+    font-family: "BerthaMelanie", serif;
+    color: red;
+}
+.googlefont{
+    font-family: 'Roboto', serif;
+}
+.bold{
+    font-weight: bold;
+    font-size: 38px;
+}
+.under{
+    text-decoration: underline red;
+}
+
+h1{
+    text-shadow: 2px 8px deeppink;
+}
+h2{
+    color: dodgerblue;
+    font-family: fantasy;
+    text-shadow: 2px 7px black;
+    font-style: italic;
+    font-size: 38px;
+}
+h3{
+    color: green;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+h1 + p {
+    font-size: 20px;
+}
+h3 + p{
+    color: blue;
+    font-size: 22px;
+}
