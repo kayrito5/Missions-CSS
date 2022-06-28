@@ -1,0 +1,27 @@
+h2:only-of-type{
+    text-align: center;
+}
+section > h2 {
+    color: red;
+}
+h2 + h2 {
+    color: green;
+}
+
+div > p {
+    color: blue;
+    font-size: 18px;
+}
+article > p:nth-child(1){
+    color: blue;
+}
+article > p:nth-child(2){
+    color: red;
+}
+article + p {
+    color: red;
+    font-weight: bold;
+}
+span:hover{
+    color: blue;
+}
