@@ -1,0 +1,38 @@
+.clear{
+    clear: both;
+}
+
+
+h1 + section h2{
+    float: left;
+    margin: 0;
+}
+
+.green{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    float: left;
+    margin-right: 10px;
+}
+.red{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    float: left;
+    margin-right: 10px;
+ }
+.blue{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    float: left;
+    margin-right: 10px;
+}
+.blue2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    float: left;
+    margin-right: 500px;
+}
