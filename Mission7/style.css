@@ -1,0 +1,41 @@
+section{
+    position: relative;
+}
+
+.red{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.green{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 75px;
+    position: absolute;
+    left: 150px;
+}
+.blue{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+.white{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 185px; left: 185px;
+}
+.img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 500px; top: -300px;
+}
+img{
+    width: 300px;
+}
