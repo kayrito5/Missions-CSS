@@ -1,0 +1,74 @@
+.clear{
+    clear: both;
+}
+
+
+div{
+    width: 300px;
+    height: 150px;
+    border: black 2px solid;
+    display: inline-block;
+}
+
+h2, h3{
+    display: none;
+}
+
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+    clear: both;
+}
+
+
+@media screen and (max-width: 950px) {
+    h2{
+        display: block;
+    }
+    h1{
+        display: none;
+    }
+    div{
+        display: flex;
+    }
+    .green{
+        float: right;
+    }
+    .blue{
+        background-color: red;
+    }
+    .red{
+        background-color: blue;
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    h3{
+        display: block;
+    }
+    h1, h2{
+        display: none;
+    }
+    div{
+        width: 150px;
+    }
+    .red{
+        display: none;
+    }
+    .green{
+        float: none;
+        position: absolute;
+        top: 15%; left: 13%;
+    }
+    .blue{
+        background-color: blue;
+    }
+}
+
+
