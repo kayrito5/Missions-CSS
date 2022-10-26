@@ -1,0 +1,56 @@
+body{
+    width: auto;
+    height: auto;
+}
+
+.grid{
+    display: grid;
+    background-image: url("../img/wallpaper.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+    grid-template : 50% 50% / repeat(4, 25%);
+}
+
+div{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+div img {
+    width: 230px;
+}
+
+.sorc{
+    grid-area : 1/1/3/2;
+}
+
+.bete{
+    grid-area : 1/2/2/3;
+}
+
+.femme{
+    grid-area : 2/2/3/3;
+}
+
+.eclaireur{
+    grid-area : 1/3/2/4;
+}
+
+.reine{
+    grid-area : 2/3/3/4;
+}
+
+.elfe{
+    grid-area : 1/4/3/5;
+}
+
+.sorc img, .femme img, .eclaireur img{
+    border: rgba(159,232,85,0.7) solid 15px;
+    border-radius: 8px;
+}
+
+.bete img, .reine img, .elfe img{
+    border: rgba(35,90,140,0.7) solid 15px;
+    border-radius: 8px;
+}
