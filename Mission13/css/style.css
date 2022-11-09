@@ -1,0 +1,75 @@
+body{
+    margin: auto;
+}
+
+
+
+.blue{
+    width: 600px;
+    height: 200px;
+    margin: 25px auto 25px auto;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 200px;
+}
+
+.notransi:hover{
+    background-color: green;
+}
+
+.transi{
+    transition: background-color 1s;
+}
+.transi:hover{
+    background-color: green;
+    transition: background-color 1s;
+}
+
+
+
+.flex{
+    display: flex;
+}
+
+
+
+.rond{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+}
+
+.lent{
+    transition: background-color 2s, border-radius 1s;
+}
+.lent:hover{
+    border-radius: 50%;
+    background-color: lightskyblue;
+}
+
+.fast{
+    transition: border-radius 0.5s;
+}
+.fast:hover{
+    border-radius: 50%;
+    background-color: lightskyblue;
+}
+
+
+
+.zoom{
+    width: 400px;
+    height: 300px;
+    margin: 50px auto 25px auto;
+    background-image: url("../img/sherlock.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 1s;
+}
+.zoom:hover{
+    background-size: 200%;
+}
