@@ -1,0 +1,151 @@
+body{
+    margin: auto;
+}
+
+.blue{
+    background-color: blue;
+    width: 300px;
+    height: 250px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    line-height: 250px;
+    font-size: 25px;
+    color: white;
+}
+
+.nostop:hover{
+    animation-name: nostop;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nostop{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.stop:hover{
+    animation-name: stop;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes stop{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.fond{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/fond.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.panneau{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    text-align: center;
+    line-height: 400px;
+}
+.panneau img{
+    width: 10%;
+}
+.bouge{
+    position: absolute;
+    line-height: normal;
+    color: white;
+    top: 127px;
+    left: 46%;
+    font-size: 28px;
+}
+.panneau:hover ~ .bip{
+    animation-name: cours;
+    animation-duration: 3s;
+}
+
+.panneau:hover ~ .bip > .bipbip{
+    animation-name: cache;
+    animation-duration: 20s;
+}
+
+.bipbip{
+    position: absolute;
+    color: white;
+    line-height: normal;
+    background-color: blue;
+    top: -90px;
+    left: 90%;
+    font-size: 40px;
+    opacity: 0;
+}
+
+.bip{
+    position: relative;
+    width: 6%;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: -156px;
+}
+.bip img{
+    width: 100%;
+}
+
+@keyframes cours {
+    from{
+        margin-left: -100px;
+        width: 6%;
+    }
+    60%{
+        margin-left: 20%;
+        width: 10%;
+    }
+    to{
+        margin-left: 99%;
+        width: 6%;
+    }
+}
+
+@keyframes cache {
+    3%{
+        opacity: 0;
+    }
+    4%{
+        opacity: 20;
+    }
+    5%{
+        opacity: 50;
+    }
+    6%{
+        opacity: 70;
+    }
+    7%{
+        opacity: 100;
+    }
+    8%{
+        opacity: 70;
+    }
+    9%{
+        opacity: 50;
+    }
+    10%{
+        opacity: 20;
+    }
+    11%{
+        opacity: 0;
+    }
+}
