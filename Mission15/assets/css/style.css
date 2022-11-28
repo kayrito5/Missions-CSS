@@ -1,0 +1,561 @@
+body{
+    margin: auto;
+    width: auto;
+}
+.flex{
+    display: flex;
+    min-height: 70vh;
+    position: relative;
+}
+main{
+    padding-top: 110px;
+}
+
+@font-face {
+    font-family: "hades";
+    src: url("../font/HADES.otf");
+}
+
+h1, h2, h3, nav{
+    font-family: hades;
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: black;
+    height: 110px;
+}
+header nav{
+    position: absolute;
+    font-size: 35px;
+    z-index: 100;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .8s ease;
+    transform: translateY(-600%);
+ }
+header nav img{
+    width: 8%;
+    position: absolute;
+}
+.nav{
+    height: 100%;
+}
+.logo{
+    width: 100%;
+    z-index: 110;
+}
+
+button:hover ~ nav{
+    transform: translateY(257.5%);
+}
+
+nav ul{
+    width: 100%;
+    background: orange;
+    position: relative;
+}
+nav ul li:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 173px;
+    height: 221px;
+    position: absolute;
+    top:35%;
+    left:41%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/zagreus.png");
+    background-size: cover;
+}
+nav ul li:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 196px;
+    height: 153px;
+    position: absolute;
+    top:50%;
+    left:60%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/Zeus.png");
+    background-size: cover;
+}
+nav ul li:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 161px;
+    height: 166px;
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/Thanatos.png");
+    background-size: cover;
+}
+nav ul li:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 253px;
+    height: 152px;
+    position: absolute;
+    top:50%;
+    left:60%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/Poseidon.png");
+    background-size: cover;
+}
+nav ul li:nth-child(5)::before {
+    content: "";
+    display: block;
+    width: 152px;
+    height: 166px;
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/Megaera.png");
+    background-size: cover;
+}
+nav ul li:nth-child(6)::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 183px;
+    position: absolute;
+    top:44%;
+    left:59%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/hades.png");
+    background-size: cover;
+}
+nav ul li:nth-child(7)::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 164px;
+    position: absolute;
+    top:50%;
+    left:41%;
+    transform: translate(-50%,-50%);
+    background-image: url("../img/Demeter.png");
+    background-size: cover;
+}
+
+nav ul li{
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 68px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.nav button{
+    z-index: 150;
+    border: none;
+    background-color: transparent;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.nav button {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin: 50px auto;
+    cursor: pointer;
+}
+.nav span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: red;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+}
+
+.nav button span:nth-child(1) {
+    top: -10px;
+    transition: transform .8s ease;
+}
+.nav button span:nth-child(2) {
+    top: 8px;
+}
+.nav button span:nth-child(3) {
+    top: 26px;
+    transition: transform .8s ease;
+}
+
+button:hover span:nth-child(1){
+    transform: rotate(45deg) translate(10px, 11px);
+}
+button:hover span:nth-child(2){
+    display: none;
+}
+button:hover span:nth-child(3){
+    transform: rotate(-45deg) translate(12px, -15px);
+ }
+
+
+.bg{
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/wall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img{
+    width: 20%;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+h1{
+    width: 100%;
+    z-index: 90;
+    background-color: black;
+    height: 150px;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    font-size: 65px;
+    margin: 0;
+}
+
+.personnages{
+    text-align: center;
+}
+
+.flex p{
+    font-family: sans-serif;
+    z-index: 10;
+    font-size: 25px;
+}
+.flex div{
+     width: 45%;
+ }
+.personnages article:nth-of-type(odd){
+    justify-content: flex-end;
+}
+
+.zagreus img{
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+}
+.hades img{
+    position: absolute;
+    width: 34%;
+    bottom: 0;
+    right: 150px;
+}
+.thanatos img{
+    position: absolute;
+    width: 38%;
+    bottom: 0;
+    left: 130px;
+}
+.megaera img{
+    position: absolute;
+    width: 35%;
+    bottom: 0;
+    right: 150px;
+}
+
+
+.zagreus{
+    background-color: darkred;
+    color: yellowgreen;
+    text-align: right;
+    padding-right: 150px;
+}
+.hades{
+    background-color: yellowgreen;
+    color: darkred;
+    text-align: left;
+    padding-left: 150px;
+}
+.thanatos{
+    background-color: darkslategrey;
+    color: steelblue;
+    text-align: right;
+    padding-right: 150px;
+}
+.megaera{
+    background-color: blue;
+    color: white;
+    text-align: left;
+    padding-left: 150px;
+}
+
+h3{
+    font-size: 80px;
+    text-align: center;
+}
+h2{
+    position: relative;
+    z-index: 90;
+    border-radius: 25px;
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: -15px auto 0 auto;
+}
+
+.dieu{
+    background-image: url(../img/fond2.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.grid{
+    display: grid;
+    grid-template : 50% 50% / repeat(3, 33%);
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.grid img{
+    position: relative;
+    height: 400px;
+}
+.grid{
+    z-index: 80;
+}
+
+.athena, .zeus, .arthemis, .demether, .ares, .poseidon{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.athena h2{
+    background-color: steelblue;
+}
+.zeus h2{
+    background-color: lightgreen;
+}
+.arthemis h2{
+    background-color: forestgreen;
+}
+.demether h2{
+    background-color: cadetblue;
+}
+.poseidon h2{
+    background-color: darkseagreen;
+}
+.ares h2{
+    background-color: red;
+}
+
+.descri{
+    position: absolute;
+    padding-top: 30px;
+    text-align: left;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transform: translateY(165%);
+    transition: transform 2s ease;
+}
+
+.athena:hover p, .zeus:hover p, .arthemis:hover p,
+.demether:hover p, .ares:hover p, .poseidon:hover p{
+    transform: translateY(0);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 560px) {
+    body{
+        width: 560px;
+    }
+    header nav{
+        transform: translate(-101%, -490%);
+        z-index: 10;
+    }
+    .logo{
+        z-index: 50;
+    }
+    button:hover ~ nav{
+         transform: translate(-101%, 525%);
+     }
+    header{
+        background-color: orange;
+        display: flex;
+        height: 120px;
+        justify-content: space-between;
+    }
+    .flex img{
+        width: 80%;
+    }
+    .flex{
+        display: block;
+        padding: 9px;
+        text-align: center;
+    }
+    .flex p{
+        position: absolute;
+        height: 100%;
+        transform: translateY(89%);
+        transition: transform 1.5s ease;
+    }
+
+    .nav button{
+        right: 6%;
+    }
+    .logo img{
+        width: 39%;
+        margin: 3% 0 auto 4%;
+    }
+    .bg{
+        background-image: url(../img/mobileWPHades.jpg);
+    }
+    .none{
+        display: none;
+    }
+
+    .zagreus{
+         z-index: 100;
+     }
+    .zagreus img{
+         width: 83%;
+         position: absolute;
+         top: 80px;
+         left: 40px;
+     }
+    .zagreus p{
+        background-color: darkred;
+        z-index: 101;
+    }
+
+    .hades{
+        z-index: 102;
+    }
+    .hades img{
+        position: absolute;
+        width: 86%;
+        top: 95px;
+        right: 47px;
+    }
+    .hades p{
+         background-color: yellowgreen;
+        z-index: 103;
+     }
+
+    .thanatos{
+        z-index: 104;
+        overflow: hidden;
+    }
+    .thanatos img{
+        position: absolute;
+        width: 99%;
+        top: 105px;
+        left: -1px;
+    }
+    .thanatos p{
+         background-color: darkslategrey;
+        z-index: 105;
+     }
+
+    .megaera{
+        z-index: 106;
+        overflow: hidden;
+    }
+    .megaera img{
+        position: absolute;
+        width: 95%;
+        top: 87px;
+        right: 19px;
+    }
+    .megaera p{
+         background-color: blue;
+        z-index: 107;
+     }
+
+    h3{
+        margin: 0;
+        font-size: 65px;
+    }
+
+    nav ul li:nth-child(1) img{
+        left: 22%;
+        bottom: -45%;
+        width: 14%;
+    }
+    nav ul li:nth-child(2) img{
+        right: 12%;
+        top: -114%;
+        width: 27%;
+    }
+    nav ul li:nth-child(3) img{
+        left: 16%;
+        top: -102%;
+        width: 19%;
+    }
+    nav ul li:nth-child(4) img{
+        right: 9%;
+        top: -117%;
+        width: 33%;
+    }
+    nav ul li:nth-child(5) img{
+        left: 14%;
+        top: -168%;
+        width: 22%;
+    }
+    nav ul li:nth-child(6) img{
+        right: 14%;
+        top: -177%;
+        width: 22%;
+    }
+    nav ul li:nth-child(7) img{
+        left: 18%;
+        top: -144%;
+        width: 23%;
+    }
+    nav ul li:nth-child(8) img{
+        right: 12%;
+        top: -190%;
+        width: 24%;
+    }
+    nav ul li:nth-child(9) img{
+        left: 11%;
+        top: -162%;
+        width: 29%;
+    }
+    nav ul li:nth-child(10) img{
+        right: 9%;
+        top: -135%;
+        width: 23%;
+    }
+
+    .zagreus:hover p, .hades:hover p, .thanatos:hover p,
+    .megaera:hover p{
+        display: block;
+        transform: translateY(-5%);
+    }
+}
