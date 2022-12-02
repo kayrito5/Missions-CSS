@@ -1,0 +1,290 @@
+#section1, #section2, #section3, #section4{
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+header{
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    z-index: 10;
+    padding-left: 5%;
+    padding-right: 15%;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(100, 100, 100, 0.60);
+    backdrop-filter: blur(5px);
+    clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0% 100%, 0% 0%);
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li:hover{
+    background-color: rgba(255,255,255,0.55);
+    transition: .5s ease;
+}
+nav ul li:hover a{
+    color: white;
+    transition: .5s ease;
+}
+nav{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+nav ul{
+    padding-left: 15px;
+    width: 140%;
+}
+nav ul li{
+    padding: 20px;
+    border: 1px white solid;
+    margin-bottom: 40px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Section 1 */
+#section1{
+    position: relative;
+    background-image: url("../img/building.jpeg");
+    background-color: rgba(0,0,0,0.60);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+h1{
+    position: absolute;
+    width: 25%;
+    display: block;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    padding: 50px;
+}
+#section1 h1{
+    text-align: center;
+    font-size: 85px;
+    border: 1px white solid;
+    font-family: 'Inter', sans-serif;
+    padding: 50px;
+}
+.big{
+    font-size: 130px;
+}
+
+/* Section 2 */
+#section2{
+    background-image: url("../img/building2.jpg");
+    background-color: rgba(0,0,0,0.60);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#section2 p {
+    font-size: 71px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    position: absolute;
+    top: 81%;
+    left: 15%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 48%;
+    height: 460px;
+    position: absolute;
+    top: 20%;
+    right: 9%;
+    transform: perspective(200px) rotateY(-6deg);
+}
+.grid div{
+    height: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+#section2 .grid div:hover p{
+    transform: translateY(0);
+}
+#section2 .title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.65);
+    border-radius: 30px;
+    transform: translateY(100%);
+    transition: transform .5s ease;
+}
+.grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.hg{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.bg{
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+.mg{
+     grid-column: 2/3;
+     grid-row: 1/2;
+}
+.md{
+      grid-column: 3/4;
+      grid-row: 1/2;
+}
+.mb{
+    grid-column: 2/4;
+    grid-row: 2/5;
+}
+.hd{
+     grid-column: 4/5;
+     grid-row: 1/3;
+}
+.bd{
+    grid-column: 4/5;
+    grid-row: 3/5;
+
+}
+
+
+/* Section 3 */
+#section3{
+    background-image: url("../img/building3.jpg");
+    background-color: rgba(0, 191, 255, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+form{
+    position: absolute;
+    width: 47%;
+    top: 18%;
+    right: 3%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
+}
+.fname{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 98%;
+    text-align: left;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    width: 102%;
+    text-align: left;
+}
+
+input{
+    margin-bottom: 15px;
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    font-weight: normal;
+    color: white;
+    padding: 2%;
+    background-color: rgba(0,0,0,0.70);
+    outline-color: lightgreen;
+    border-bottom: white 1px solid;
+}
+label{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+#area{
+    font-size: 45px;
+    font-weight: normal;
+    color: white;
+    padding: 1%;
+    background-color: rgba(0,0,0,0.70);
+    outline-color: lightgreen;
+    border-bottom: white 1px solid;
+}
+fieldset{
+    text-align: right;
+    border: 0;
+}
+legend{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+/* Section 4 */
+#section4{
+    background-image: url("../img/building4.jpg");
+    background-color: rgba(249, 191, 59, 0.4);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+iframe{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.reseau{
+    display: flex;
+    width: 28%;
+    position: absolute;
+    align-items: flex-end;
+    justify-content: space-between;
+    top: 62%;
+    right: 5%;
+}
+.reseau p{
+    font-size: 25px;
+    color: white;
+    font-weight: lighter;
+}
+.reseau a i{
+    font-size: 68px;
+    color: white;
+}
